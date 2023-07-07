@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentación básica para programadores.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  
+</head>
+
+<header>
+
+</header>
+
+<body class="bg-gray-100">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <h1 class="text-4xl font-bold text-center mb-8">Documentación básica para desarrolladores web.</h1>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Teoria basica: HTML</h2>
+      <h3 class="text-lg font-semibold mb-4">Título: "Introducción al Desarrollo Web con HTML"</h3>
+      <p class="text-gray-700 mb-4">Recopilación digital introductória al lenguaje de marcado HTML (HyperText Markup Language). A medida que avances, explorarás los conceptos fundamentales de HTML y aprenderás cómo estructurar y presentar contenido en la web.</p>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter1-html-code')">Capítulo 1: Fundamentos de HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, te familiarizarás con los fundamentos de HTML. Aprenderás sobre la estructura básica de un documento HTML y cómo utilizar etiquetas, elementos y atributos para marcar el contenido.</p>
+        <div id="chapter1-html-code" class="html-code">
+          <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Mi primera página HTML&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;¡Hola, mundo!&lt;/h1&gt;
+  &lt;p&gt;Esta es mi primera página web.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter2-html-code')">Capítulo 2: Elementos de texto en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos los elementos de texto en HTML. Aprenderemos cómo crear encabezados, párrafos, enlaces y listas para estructurar y dar formato al contenido de nuestra página web.</p>
+        <div id="chapter2-html-code" class="html-code">
+          <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo.com&lt;/a&gt;
+&lt;ul&gt;
+  &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter3-html-code')">Capítulo 3: Tablas en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de tablas en HTML. Descubriremos cómo crear y dar formato a tablas para mostrar datos de manera organizada en nuestras páginas web.</p>
+        <div id="chapter3-html-code" class="html-code">
+          <pre><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Nombre&lt;/th&gt;
+    &lt;th&gt;Edad&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Juan&lt;/td&gt;
+    &lt;td&gt;25&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;María&lt;/td&gt;
+    &lt;td&gt;30&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter4-html-code')">Capítulo 4: Imágenes en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos cómo incorporar imágenes en nuestras páginas web utilizando HTML. Aprenderemos a agregar imágenes y controlar su tamaño, alineación y atributos alternativos.</p>
+        <div id="chapter4-html-code" class="html-code">
+          <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="300" height="200"&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter5-html-code')">Capítulo 5: Formularios en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a crear formularios interactivos utilizando HTML. Exploraremos cómo agregar campos de entrada, botones y elementos de selección para recopilar datos de los usuarios.</p>
+        <div id="chapter5-html-code" class="html-code">
+          <pre><code>&lt;form action="/procesar-formulario" method="post"&gt;
+  &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+  &lt;input type="text" id="nombre" name="nombre" required&gt;
+  &lt;br&gt;
+  &lt;label for="email"&gt;Email:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email" required&gt;
+  &lt;br&gt;
+  &lt;input type="submit" value="Enviar"&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter6-html-code')">Capítulo 6: Elementos de audio y video en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, descubriremos cómo agregar elementos de audio y video a nuestras páginas web utilizando HTML. Aprenderemos a incorporar archivos multimedia y controlar su reproducción.</p>
+        <div id="chapter6-html-code" class="html-code">
+          <pre><code>&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+&lt;audio src="audio.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter7-html-code')">Capítulo 7: Enlaces y anclas en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos el uso de enlaces y anclas en HTML. Aprenderemos a crear enlaces internos y externos, y a utilizar anclas para navegar dentro de una página.</p>
+        <div id="chapter7-html-code" class="html-code">
+          <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Enlace externo&lt;/a&gt;
+&lt;a href="#seccion2"&gt;Ir a Sección 2&lt;/a&gt;
+...
+&lt;h2 id="seccion2"&gt;Sección 2&lt;/h2&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter8-html-code')">Capítulo 8: Listas en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de listas en HTML. Descubriremos cómo crear listas ordenadas y no ordenadas para organizar y presentar información de manera estructurada.</p>
+        <div id="chapter8-html-code" class="html-code">
+          <pre><code>&lt;ul&gt;
+  &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+&lt;/ol&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter9-html-code')">Capítulo 9: Elementos semánticos en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos sobre los elementos semánticos en HTML y su importancia para mejorar la estructura y accesibilidad de nuestras páginas web. Exploraremos etiquetas como &lt;header&gt;, &lt;nav&gt;, &lt;article&gt; y más.</p>
+        <div id="chapter9-html-code" class="html-code">
+          <pre><code>&lt;header&gt;
+  &lt;h1&gt;Título del sitio&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+    &lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;article&gt;
+  &lt;h2&gt;Título del artículo&lt;/h2&gt;
+  &lt;p&gt;Contenido del artículo...&lt;/p&gt;
+&lt;/article&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter10-html-code')">Capítulo 10: Elementos de formulario avanzados en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en elementos de formulario más avanzados en HTML. Aprenderemos a utilizar campos de entrada de tipo fecha, selección de opciones, casillas de verificación y más para crear formularios interactivos.</p>
+        <div id="chapter10-html-code" class="html-code">
+          <pre><code>&lt;input type="date" name="fecha" id="fecha"&gt;
+&lt;select name="opcion" id="opcion"&gt;
+  &lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;
+  &lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;
+  &lt;option value="opcion3"&gt;Opción 3&lt;/option&gt;
+&lt;/select&gt;
+&lt;input type="checkbox" name="acepto" id="acepto"&gt;
+&lt;label for="acepto"&gt;Acepto los términos y condiciones&lt;/label&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter11-html-code')">Capítulo 11: Elementos de encabezado en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos los elementos de encabezado en HTML. Aprenderemos a utilizar las etiquetas h1-h6 para jerarquizar el contenido y mejorar la estructura de nuestras páginas web.</p>
+        <div id="chapter11-html-code" class="html-code">
+          <pre><code>&lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;
+&lt;h2&gt;Encabezado de nivel 2&lt;/h2&gt;
+&lt;h3&gt;Encabezado de nivel 3&lt;/h3&gt;
+&lt;h4&gt;Encabezado de nivel 4&lt;/h4&gt;
+&lt;h5&gt;Encabezado de nivel 5&lt;/h5&gt;
+&lt;h6&gt;Encabezado de nivel 6&lt;/h6&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter12-html-code')">Capítulo 12: Comentarios en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a agregar comentarios en nuestro código HTML. Los comentarios nos permiten añadir notas o explicaciones que no se mostrarán en la página web pero que pueden ser útiles para otros desarrolladores o para nosotros mismos en el futuro.</p>
+        <div id="chapter12-html-code" class="html-code">
+          <pre><code>&lt;!-- Este es un comentario en HTML --&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter13-html-code')">Capítulo 13: Caracteres especiales en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos cómo incluir caracteres especiales en nuestras páginas HTML. Aprenderemos a utilizar entidades HTML o referencias de caracteres para mostrar símbolos, caracteres acentuados y otros caracteres especiales.</p>
+        <div id="chapter13-html-code" class="html-code">
+          <pre><code>&lt;p&gt;Este es un símbolo especial: &amp;copy; (©)&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter14-html-code')">Capítulo 14: Estilos en línea en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a aplicar estilos en línea a nuestros elementos HTML utilizando el atributo "style". Podremos cambiar el color del texto, el tamaño de fuente, el fondo y más.</p>
+        <div id="chapter14-html-code" class="html-code">
+          <pre><code>&lt;p style="color: red; font-size: 18px; background-color: #f1f1f1;"&gt;Este es un texto con estilo en línea&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter15-html-code')">Capítulo 15: Audio y video embebidos en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos cómo incorporar contenido de audio y video embebido en nuestras páginas web. Aprenderemos a utilizar las etiquetas &lt;audio&gt; y &lt;video&gt; para reproducir archivos multimedia alojados en diferentes servicios.</p>
+        <div id="chapter15-html-code" class="html-code">
+          <pre><code>&lt;video src="https://www.ejemplo.com/video.mp4" controls&gt;&lt;/video&gt;
+&lt;audio src="https://www.ejemplo.com/audio.mp3" controls&gt;&lt;/audio&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter16-html-code')">Capítulo 16: Iframes en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a utilizar iframes en HTML. Los iframes nos permiten incrustar contenido externo dentro de nuestras páginas web, como mapas, vídeos de YouTube o contenido de otras páginas.</p>
+        <div id="chapter16-html-code" class="html-code">
+          <pre><code>&lt;iframe src="https://www.ejemplo.com/mapa" width="600" height="400"&gt;&lt;/iframe&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter17-html-code')">Capítulo 17: Metaetiquetas en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos las metaetiquetas en HTML. Aprenderemos a utilizar etiquetas como &lt;meta charset&gt;, &lt;meta name="description"&gt; y &lt;meta name="viewport"&gt; para definir la codificación del documento, la descripción y la configuración de la vista en dispositivos móviles.</p>
+        <div id="chapter17-html-code" class="html-code">
+          <pre><code>&lt;meta charset="UTF-8"&gt;
+&lt;meta name="description" content="Descripción de la página"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter18-html-code')">Capítulo 18: Elementos interactivos en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemosa utilizar elementos interactivos en HTML para mejorar la experiencia del usuario. Exploraremos etiquetas como &lt;button&gt;, &lt;input&gt; y &lt;textarea&gt; para crear botones, campos de entrada de texto y áreas de texto.</p>
+        <div id="chapter18-html-code" class="html-code">
+          <pre><code>&lt;button&gt;Haz clic&lt;/button&gt;
+&lt;input type="text" placeholder="Ingresa tu nombre"&gt;
+&lt;textarea rows="4" cols="50"&gt;Este es un área de texto&lt;/textarea&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter19-html-code')">Capítulo 19: HTML5 Canvas</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos la etiqueta &lt;canvas&gt; en HTML5. Aprenderemos a utilizar el elemento canvas y JavaScript para dibujar gráficos, imágenes y animaciones en nuestras páginas web.</p>
+        <div id="chapter19-html-code" class="html-code">
+          <pre><code>&lt;canvas id="myCanvas"&gt;&lt;/canvas&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter20-html-code')">Capítulo 20: Elementos de multimedia en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de elementos de multimedia en HTML. Descubriremos cómo incorporar contenido multimedia como audio, video y gráficos vectoriales escalables (SVG) en nuestras páginas web.</p>
+        <div id="chapter20-html-code" class="html-code">
+          <pre><code>&lt;audio src="cancion.mp3" controls&gt;&lt;/audio&gt;
+&lt;video src="video.mp4" controls&gt;&lt;/video&gt;
+&lt;svg&gt;...&lt;/svg&gt;</code></pre>
+        </div>
+
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter21-html-code')">Capítulo 21: Etiquetas de encabezado en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos las etiquetas de encabezado en HTML. Aprenderemos a utilizar las etiquetas &lt;header&gt;, &lt;hgroup&gt; y &lt;aside&gt; para organizar y estructurar el contenido de nuestras páginas web.</p>
+        <div id="chapter21-html-code" class="html-code">
+          <pre><code>&lt;header&gt;
+  &lt;h1&gt;Título principal&lt;/h1&gt;
+  &lt;nav&gt;
+    &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+    &lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;hgroup&gt;
+  &lt;h2&gt;Subtítulo 1&lt;/h2&gt;
+  &lt;h3&gt;Subtítulo 2&lt;/h3&gt;
+&lt;/hgroup&gt;
+&lt;aside&gt;
+  &lt;p&gt;Contenido adicional...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter22-html-code')">Capítulo 22: Etiquetas de formulario en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de etiquetas de formulario en HTML. Descubriremos cómo utilizar las etiquetas &lt;fieldset&gt;, &lt;legend&gt; y &lt;label&gt; para agrupar y etiquetar campos de entrada relacionados en nuestros formularios.</p>
+        <div id="chapter22-html-code" class="html-code">
+          <pre><code>&lt;form&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Información personal&lt;/legend&gt;
+    &lt;label for="nombre"&gt;Nombre:&lt;/label&gt;
+    &lt;input type="text" id="nombre" name="nombre"&gt;
+    &lt;br&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email"&gt;
+  &lt;/fieldset&gt;
+  &lt;fieldset&gt;
+    &lt;legend&gt;Preferencias&lt;/legend&gt;
+    &lt;label for="color"&gt;Color favorito:&lt;/label&gt;
+    &lt;input type="color" id="color" name="color"&gt;
+    &lt;br&gt;
+    &lt;label for="comida"&gt;Comida favorita:&lt;/label&gt;
+    &lt;input type="text" id="comida" name="comida"&gt;
+  &lt;/fieldset&gt;
+&lt;/form&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter23-html-code')">Capítulo 23: Etiquetas de sección en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos las etiquetas de sección en HTML. Aprenderemos a utilizar las etiquetas &lt;section&gt;, &lt;article&gt; y &lt;aside&gt; para organizar y estructurar el contenido de nuestras páginas web de manera semántica.</p>
+        <div id="chapter23-html-code" class="html-code">
+          <pre><code>&lt;section&gt;
+  &lt;h2&gt;Sección 1&lt;/h2&gt;
+  &lt;p&gt;Contenido de la sección 1...&lt;/p&gt;
+&lt;/section&gt;
+&lt;article&gt;
+  &lt;h2&gt;Artículo 1&lt;/h2&gt;
+  &lt;p&gt;Contenido del artículo 1...&lt;/p&gt;
+&lt;/article&gt;
+&lt;aside&gt;
+  &lt;h3&gt;Anuncio&lt;/h3&gt;
+  &lt;p&gt;Contenido del anuncio...&lt;/p&gt;
+&lt;/aside&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter24-html-code')">Capítulo 24: Etiquetas de presentación en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a utilizar etiquetas de presentación en HTML para resaltar y dar formato a ciertas partes del contenido. Exploraremos etiquetas como &lt;b&gt;, &lt;i&gt;, &lt;strong&gt; y &lt;em&gt; para aplicar negrita, cursiva y otros estilos de texto.</p>
+        <div id="chapter24-html-code" class="html-code">
+          <pre><code>&lt;p&gt;Este es un texto &lt;b&gt;resaltado en negrita&lt;/b&gt; y este es un texto &lt;i&gt;en cursiva&lt;/i&gt;.&lt;/p&gt;
+&lt;p&gt;Este es un texto &lt;strong&gt;importante&lt;/strong&gt; y este es un texto &lt;em&gt;énfasis&lt;/em&gt;.&lt;/p&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter25-html-code')">Capítulo 25: Etiquetas de agrupación en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos las etiquetas de agrupación en HTML. Aprenderemos a utilizar las etiquetas &lt;div&gt;, &lt;span&gt; y &lt;pre&gt; para agrupar y dar formato a partes específicas del contenido de nuestras páginas web.</p>
+        <div id="chapter25-html-code" class="html-code">
+          <pre><code>&lt;div&gt;
+  &lt;h2&gt;Título de la sección&lt;/h2&gt;
+  &lt;p&gt;Contenido de la sección...&lt;/p&gt;
+&lt;/div&gt;
+&lt;span&gt;Este es un texto resaltado&lt;/span&gt;
+&lt;pre&gt;function saludar() {
+  console.log("Hola, mundo!");
+}
+saludar();&lt;/pre&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter26-html-code')">Capítulo 26: Etiquetas de tabla en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de etiquetas de tabla en HTML. Descubriremos cómo utilizar las etiquetas &lt;caption&gt;, &lt;thead&gt;, &lt;tbody&gt;, &lt;th&gt; y &lt;td&gt; para crear tablas estructuradas y legibles.</p>
+        <div id="chapter26-html-code" class="html-code">
+          <pre><code>&lt;table&gt;
+  &lt;caption&gt;Tabla de ejemplos&lt;/caption&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Encabezado 1&lt;/th&gt;
+      &lt;th&gt;Encabezado 2&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dato 1&lt;/td&gt;
+      &lt;td&gt;Dato 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Dato 3&lt;/td&gt;
+      &lt;td&gt;Dato 4&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter27-html-code')">Capítulo 27: Etiquetas de enlace en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderemos a utilizar etiquetas de enlace en HTML. Exploraremos las etiquetas &lt;a&gt;, &lt;link&gt; y &lt;nav&gt; para crear enlaces a otras páginas web, estilos y secciones de navegación respectivamente.</p>
+        <div id="chapter27-html-code" class="html-code">
+          <pre><code>&lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo.com&lt;/a&gt;
+&lt;link rel="stylesheet" href="estilos.css"&gt;
+&lt;nav&gt;
+  &lt;a href="#inicio"&gt;Inicio&lt;/a&gt;
+  &lt;a href="#acerca"&gt;Acerca de&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter28-html-code')">Capítulo 28: Etiquetas de imagen en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos las etiquetas de imagen en HTML. Aprenderemos a utilizar las etiquetas &lt;img&gt;, &lt;figure&gt; y &lt;figcaption&gt; para mostrar imágenes y agregar descripciones a las mismas.</p>
+        <div id="chapter28-html-code" class="html-code">
+          <pre><code>&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+&lt;figure&gt;
+  &lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;
+  &lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter29-html-code')">Capítulo 29: Etiquetas de lista en HTML</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, nos adentraremos en el uso de etiquetas de lista en HTML. Descubriremos cómo utilizar las etiquetas &lt;dl&gt;, &lt;dt&gt; y &lt;dd&gt; para crear listas de definiciones y las etiquetas &lt;menu&gt; y &lt;li&gt; para crear menús y listas de opciones.</p>
+        <div id="chapter29-html-code" class="html-code">
+          <pre><code>&lt;dl&gt;
+  &lt;dt&gt;Término 1&lt;/dt&gt;
+  &lt;dd&gt;Definición 1&lt;/dd&gt;
+  &lt;dt&gt;Término 2&lt;/dt&gt;
+  &lt;dd&gt;Definición 2&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;menu&gt;
+  &lt;li&gt;Opción 1&lt;/li&gt;
+  &lt;li&gt;Opción 2&lt;/li&gt;
+  &lt;li&gt;Opción 3&lt;/li&gt;
+&lt;/menu&gt;</code></pre>
+        </div>
+      </div>
+
+      <!-- Siguiente libro -->
+
+
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Teoria basica: CSS</h2>
+      <h3 class="text-lg font-semibold mb-4">Título: "Fundamentos de CSS para Diseño Web"</h3>
+      <p class="text-gray-700 mb-4">Recopilación digital introductória al lenguaje de CSS, explorarás los fundamentos de CSS (Cascading Style Sheets) y aprenderás a aplicar estilos a tus páginas HTML para mejorar su apariencia y diseño. A medida que avances, descubrirás cómo utilizar selectores, propiedades y valores de CSS para personalizar la apariencia de los elementos HTML.</p>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #00FF00;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter1-css-code')">Capítulo 1: Introducción a CSS</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás los conceptos básicos de CSS y cómo enlazar hojas de estilo externas a tus documentos HTML. También descubrirás cómo aplicar estilos a elementos HTML utilizando selectores de CSS.</p>
+        <div id="chapter1-css-code" class="html-code">
+          <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #FF0000;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter2-css-code')">Capítulo 2: Selectores de CSS</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás diferentes tipos de selectores de CSS, como selectores de elemento, selectores de clase y selectores de ID. Estos selectores te permiten apuntar a elementos específicos en tu documento HTML y aplicar estilos personalizados.</p>
+        <div id="chapter2-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Selector de elemento */
+h1 {
+  color: blue;
+}
+
+/* Selector de clase */
+.red-text {
+  color: red;
+}
+
+/* Selector de ID */
+#my-button {
+  background-color: green;
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #00FF00;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter3-css-code')">Capítulo 3: Modelos de caja y posicionamiento</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, descubrirás cómo funciona el modelo de caja de CSS y cómo puedes controlar el tamaño, el margen y el padding de los elementos. También aprenderás diferentes técnicas de posicionamiento, como posicionamiento relativo, absoluto y fijo.</p>
+        <div id="chapter3-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Modelo de caja */
+.box {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin: 10px;
+  padding: 20px;
+}
+
+/* Posicionamiento relativo */
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+
+/* Posicionamiento absoluto */
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+
+/* Posicionamiento fijo */
+.fixed-box {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #0000FF;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter4-css-code')">Capítulo 4: Diseño de diseño flexible y receptivo</h4>
+        <p class="text-black-950 mb-2">En este capítulo, aprenderás sobre técnicas de diseño flexible y receptivo en CSS. Descubrirás cómo utilizar el diseño basado en rejilla y los medios de consulta (media queries) para crear diseños que se adapten a diferentes tamaños de pantalla.</p>
+        <div id="chapter4-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Diseño basado en rejilla */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Medios de consulta */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #FF00FF;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter5-css-code')">Capítulo 5: Tipografía y estilos de texto</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, explorarás cómo dar estilo a la tipografía y al texto en CSS. Aprenderás a cambiar el tamaño de la fuente, el tipo de fuente, el color y otros estilos relacionados con el texto.</p>
+        <div id="chapter5-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Cambiar tamaño de fuente */
+h1 {
+    font-size: 24px;
+}
+
+/* Cambiar tipo de fuente */
+p {
+    font-family: Arial, sans-serif;
+}
+
+/* Cambiar color de texto */
+.span-text {
+    color: #FF0000;
+}
+
+/* Estilos adicionales */
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #FFFF00;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter6-css-code')">Capítulo 6: Efectos y animaciones CSS</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, descubrirás cómo aplicar efectos y animaciones a elementos utilizando CSS. Aprenderás a agregar transiciones, transformaciones y animaciones para mejorar la experiencia visual de tu sitio web.</p>
+        <div id="chapter6-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Transiciones */
+.button {
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #00FF00;
+}
+
+/* Transformaciones */
+.rotate {
+    transform: rotate(45deg);
+}
+
+.scale {
+    transform: scale(1.2);
+}
+
+/* Animaciones */
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.box {
+    animation: move 2s infinite alternate;
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #008080;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter7-css-code')">Capítulo 7: Fondos y gradientes</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás a aplicar fondos y gradientes a elementos utilizando CSS. Descubrirás cómo cambiar el color de fondo, agregar imágenes de fondo y crear gradientes de colores suaves o de múltiples colores.</p>
+        <div id="chapter7-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Cambiar color de fondo */
+.container {
+    background-color: #F0F0F0;
+}
+
+/* Agregar imagen de fondo */
+.body-bg {
+    background-image: url('background.jpg');
+    background-size: cover;
+}
+
+/* Gradiente lineal */
+.linear-gradient {
+    background-image: linear-gradient(to right, #FF0000, #0000FF);
+}
+
+/* Gradiente radial */
+.radial-gradient {
+    background-image: radial-gradient(circle, #FFFF00, #FF00FF);
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4" style="background-color: #800080;">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter8-css-code')">Capítulo 8: Flexbox y diseño de cuadrícula</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, explorarás las características de Flexbox y las capacidades de diseño de cuadrícula en CSS. Aprenderás a crear diseños flexibles y responsivos utilizando estas técnicas de diseño modernas.</p>
+        <div id="chapter8-css-code" class="html-code">
+          <pre><code>&lt;style&gt;
+/* Flexbox */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    flex: 1;
+    margin: 10px;
+}
+
+/* Diseño de cuadrícula */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.grid-item {
+    background-color: #F0F0F0;
+    padding: 10px;
+}
+
+/* Consultas de medios para diseño responsivo */
+@media screen and (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+&lt;/style&gt;</code></pre>
+        </div>
+      </div>
+      
+      <!-- Siguiente libro -->
+
+    </div>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Teoria basica: JavaScript</h2>
+      <h3 class="text-lg font-semibold mb-4">Título: "Programación en JavaScript para Desarrollo Web"</h3>
+      <p class="text-gray-700 mb-4">Recopilación digital introductória al lenguaje de Javascript, aprenderás a utilizarlo para crear interactividad y dinamismo en tus páginas web. A medida que avances, descubrirás cómo manipular el DOM (Document Object Model), responder a eventos y trabajar con datos en JavaScript.</p>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter1-js-code')">Capítulo 1: Introducción a JavaScript</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás los conceptos básicos de JavaScript. Explorarás la sintaxis del lenguaje, los tipos de datos, las variables y las funciones.</p>
+        <div id="chapter1-js-code" class="html-code">
+          <pre><code>console.log('Hola, mundo!');</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('variables-js-code')">Capítulo 2: Variables en JavaScript</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás sobre variables en JavaScript. Descubrirás cómo declarar y asignar valores a variables, y cómo utilizar diferentes tipos de datos.</p>
+        <div id="variables-js-code" class="html-code">
+          <pre><code>let nombre = 'John Doe';
+let edad = 25;
+console.log(nombre + ' tiene ' + edad + ' años.');</code></pre>
+        </div>
+      </div>
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('funciones-js-code')">Capítulo 3: Funciones en JavaScript</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás sobre funciones en JavaScript. Aprenderás cómo definir y llamar a funciones, así como cómo utilizar parámetros y valores de retorno.</p>
+        <div id="funciones-js-code" class="html-code">
+          <pre><code>function saludar(nombre) {
+  console.log('¡Hola, ' + nombre + '!');
+}
+
+saludar('Juan');</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter5-responsive-code')">Capítulo 4: Diseño web responsive</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás sobre el diseño web responsive. Aprenderás a crear sitios web que se adapten y se vean bien en diferentes dispositivos y tamaños de pantalla.</p>
+        <div id="chapter5-responsive-code" class="html-code">
+          <pre><code>@media (max-width: 768px) { /* Estilos para dispositivos móviles */ }</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('flujo-js-code')">Capítulo 5: Control de Flujo en JavaScript</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás sobre el control de flujo en JavaScript. Explorarás las estructuras de control como if-else, bucles for y while, y el uso de operadores lógicos.</p>
+        <div id="flujo-js-code" class="html-code">
+          <pre><code>let edad = 18;
+
+if (edad >= 18) {
+  console.log('Eres mayor de edad.');
+} else {
+  console.log('Eres menor de edad.');
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('dom-js-code')">Capítulo 6: Manipulación del DOM en JavaScript</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás cómo manipular el DOM (Document Object Model) en JavaScript. Descubrirás cómo acceder y modificar elementos HTML utilizando JavaScript.</p>
+        <div id="dom-js-code" class="html-code">
+          <pre><code>let elemento = document.getElementById('miElemento');
+elemento.innerHTML = 'Nuevo contenido';</code></pre>
+        </div>
+      </div>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4 hover-color">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('inspector-js-code')">Capítulo 7: Herramienta del Inspector del Navegador</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, aprenderás sobre la herramienta del Inspector del Navegador. Descubrirás cómo utilizarla para depurar y examinar tu código JavaScript, inspeccionar elementos HTML y mucho más.</p>
+        <div id="inspector-js-code" class="html-code">
+          <pre><code>// Abre la herramienta del Inspector (Click derecho en cualquier lugar de la pagina de tu navegador y explora todas sus funcionalidades.</code></pre>
+        </div>
+      </div>
+
+      <!-- Siguiente libro -->
+
+
+    </div>
+
+    Si has llegado hasta aquí y has quedado satisfechx... Es la hora de empezar a aprender programación del lado del servidor:
+    <br> <br>
+
+    <div class="bg-white rounded-lg shadow-lg p-6 mb-8">
+      <h2 class="text-2xl font-bold mb-4">Teoria basica: PHP</h2>
+      <h3 class="text-lg font-semibold mb-4">Título: "Programación en el servidor"</h3>
+      <p class="text-gray-700 mb-4">Recopilación digital introductória al lenguaje de PHP, aprenderás a utilizarlo para crear interactividad entre el servidor y tus páginas web. A medida que avances, descubrirás cómo manipular PHP correctamente.</p>
+
+      <div class="bg-gray-200 rounded-lg p-4 mb-4">
+        <h4 class="text-lg font-semibold mb-2 code-container" onclick="toggleCode('chapter2-html-code')">Capítulo 1: El servidor</h4>
+        <p class="text-gray-700 mb-2">En este capítulo, exploraremos los elementos del servidor. Aprenderemos cómo crearlo para estructurar y dar formato al contenido de nuestra página web.</p>
+        <div id="chapter2-html-code" class="html-code">
+          <pre><code>&lt;h1&gt;Título principal&lt;/h1&gt;
+&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;
+&lt;a href="https://www.ejemplo.com"&gt;Enlace a Ejemplo.com&lt;/a&gt;
+&lt;ul&gt;
+  &lt;li&gt;Elemento de lista 1&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 2&lt;/li&gt;
+  &lt;li&gt;Elemento de lista 3&lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+    
+</body>
+
+</html>
