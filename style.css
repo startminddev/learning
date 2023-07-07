@@ -1,0 +1,20 @@
+.html-code {
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre-wrap;
+  display: none;
+}
+
+.code-container {
+  margin: 0 -1.5rem;
+  cursor: pointer;
+}
+
+.bg-gray-200 {
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.hover-color:hover {
+  background-color: var(--hover-color);
+}
